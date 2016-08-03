@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9dH-3e-tTa">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="qeA-2B-kFq">
+            <objects>
+                <viewController id="9dH-3e-tTa" customClass="MainViewController" customModule="ObserverDesignPatternDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ruV-Iv-TNk"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCs-cR-pea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FG7-Th-PFV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5k-73-d78">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changePeopleInfo:" destination="9dH-3e-tTa" eventType="touchUpInside" id="6h6-8G-1rt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W5k-73-d78" firstAttribute="centerY" secondItem="FG7-Th-PFV" secondAttribute="centerY" id="1q0-PZ-KVo"/>
+                            <constraint firstItem="W5k-73-d78" firstAttribute="centerX" secondItem="FG7-Th-PFV" secondAttribute="centerX" id="hdR-Yc-1h1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUT-jM-CFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376" y="289"/>
+        </scene>
+    </scenes>
+</document>
